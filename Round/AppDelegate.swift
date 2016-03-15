@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Round
+//  Block 8
 //
-//  Created by Фёдор on 29.02.16.
-//  Copyright © 2016 Fiodar. All rights reserved.
+//  Created by Фёдор on 09.01.16.
+//  Copyright © 2016 Фёдор. All rights reserved.
 //
 
 import UIKit
@@ -12,10 +12,26 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let navController = UINavigationController()
+    let startViewController = MainViewController()
+    
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        navController.viewControllers = [startViewController]
+        //navController.view = startViewController.view
+        navController.navigationBarHidden = true
+        //navController.navigationBar.barTintColor = UIColor(red: 65.0 / 255.0, green: 62.0 / 255.0, blue: 79.0 / 255.0, alpha: 1)
+        
+        
+        
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.rootViewController = navController
+        //self.window!.rootViewController = startViewController
+        
+        self.window?.makeKeyAndVisible()
         return true
     }
 
@@ -41,6 +57,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    
 }
 
