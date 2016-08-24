@@ -106,12 +106,12 @@ class CircleButton: UIView {
     
     private func createLabel() {
         
-        letterLabel.frame = CGRectMake(circleRadiusDifference, circleRadiusDifference, buttonWidth - circleRadiusDifference * 2, buttonHeight - circleRadiusDifference * 2)
+        letterLabel.frame = CGRectMake(circleRadiusDifference, circleRadiusDifference + buttonHeight * 0.05, buttonWidth - circleRadiusDifference * 2, buttonHeight - circleRadiusDifference * 2 - buttonHeight * 0.05)
         letterLabel.textAlignment = NSTextAlignment.Center
         letterLabel.textColor = UIColor.whiteColor()
         //letterLabel.backgroundColor = UIColor.redColor()
         letterLabel.text = ""
-        letterLabel.font = UIFont (name: "Ostrich Sans", size: buttonWidth * 0.2)
+        letterLabel.font = UIFont (name: "Ostrich Sans", size: buttonWidth * 0.28)
         //letterLabel.font = UIFont (name: "HelveticaNeue-UltraLight", size: buttonWidth * 0.2)
     }
     

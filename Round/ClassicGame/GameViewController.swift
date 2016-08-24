@@ -213,7 +213,7 @@ class GameViewController: UIViewController, ADInterstitialAdDelegate {
     
     private func createRoundButtons() {
         buttonContinue = CircleButton(x: (screenWidth  - screenHeight / 1.62 / 1.62) / 2, y: (screenHeight - screenHeight / 1.62 / 1.62) / 2  , screenWidth: screenWidth, screenHeight: screenHeight, typeButton: 1)
-        buttonContinue.letterLabel.text = "Continue"
+        buttonContinue.letterLabel.text = "go on"
         buttonContinue.inCircle.backgroundColor = UIColor.getSquareColor(5)
         buttonContinue.outCircle.backgroundColor = UIColor.getRingColor(5)
         buttonContinue.callback = {
@@ -223,11 +223,12 @@ class GameViewController: UIViewController, ADInterstitialAdDelegate {
         self.view.addSubview(buttonContinue)
         
         buttonRestart = CircleButton(x: (screenWidth  - screenHeight / 1.62 / 1.62 / 1.62 / 1.62) / 2, y: 0.8 * screenHeight , screenWidth: screenWidth, screenHeight: screenHeight, typeButton: 3)
-        buttonRestart.letterLabel.text = "Restart"
+        buttonRestart.letterLabel.text = "RR"
         buttonRestart.inCircle.backgroundColor = UIColor.getSquareColor(6)
         buttonRestart.outCircle.backgroundColor = UIColor.getRingColor(6)
         buttonRestart.callback = {
             self.startNewGame()
+            self.refreshScene()
             self.pause(false)
         }
         buttonRestart.animateButton(onScreen: false, wait: 0.0, duration: 0.0)
@@ -247,7 +248,7 @@ class GameViewController: UIViewController, ADInterstitialAdDelegate {
         
         buttonSettings = CircleButton(x: (screenWidth  - screenHeight / 1.62 / 1.62 / 1.62 / 1.62) / 2 + 0.3 * screenWidth,
             y: 0.8 * screenHeight , screenWidth: screenWidth, screenHeight: screenHeight, typeButton: 3)
-        buttonSettings.letterLabel.text = "Settings"
+        buttonSettings.letterLabel.text = "Sett"
         buttonSettings.textSize = 10
         buttonSettings.inCircle.backgroundColor = UIColor.getSquareColor(2)
         buttonSettings.outCircle.backgroundColor = UIColor.getRingColor(2)
@@ -262,7 +263,7 @@ class GameViewController: UIViewController, ADInterstitialAdDelegate {
         self.view.addSubview(buttonSettings)
         
         buttonBigRestart = CircleButton(x: (screenWidth  - screenHeight / 1.62 / 1.62) / 2, y: (screenHeight - screenHeight / 1.62 / 1.62) / 2 , screenWidth: screenWidth, screenHeight: screenHeight, typeButton: 1)
-        buttonBigRestart.letterLabel.text = "Restart"
+        buttonBigRestart.letterLabel.text = "RR"
         buttonBigRestart.inCircle.backgroundColor = UIColor.getSquareColor(8)
         buttonBigRestart.outCircle.backgroundColor = UIColor.getRingColor(8)
         buttonBigRestart.callback = {

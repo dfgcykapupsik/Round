@@ -243,6 +243,7 @@ class LevelGameViewController: UIViewController, ADInterstitialAdDelegate {
         buttonRestart.outCircle.backgroundColor = UIColor.getRingColor(6)
         buttonRestart.callback = {
             self.restartLevel()
+            self.refreshScene()
             self.pause(false)
         }
         buttonRestart.animateButton(onScreen: false, wait: 0.0, duration: 0.0)
