@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D00FA6E81C84799100ADC45B"
-               BuildableName = "Cir.app"
+               BuildableName = "Round.app"
                BlueprintName = "Round"
                ReferencedContainer = "container:Round.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D00FA6E81C84799100ADC45B"
-            BuildableName = "Cir.app"
+            BuildableName = "Round.app"
             BlueprintName = "Round"
             ReferencedContainer = "container:Round.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D00FA6E81C84799100ADC45B"
-            BuildableName = "Cir.app"
+            BuildableName = "Round.app"
             BlueprintName = "Round"
             ReferencedContainer = "container:Round.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D00FA6E81C84799100ADC45B"
-            BuildableName = "Cir.app"
+            BuildableName = "Round.app"
             BlueprintName = "Round"
             ReferencedContainer = "container:Round.xcodeproj">
          </BuildableReference>
